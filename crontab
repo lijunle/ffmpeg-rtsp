@@ -1,0 +1,4 @@
+# m  h  dom mon dow   command
+*/2  *  *   *   *     sh /path/to/nextcloud/camera/files/scan.sh
+3    *  *   *   *     sh /path/to/nextcloud/camera/files/archive.sh
+7    5  *   *   *     sh /path/to/nextcloud/camera/files/clean.sh

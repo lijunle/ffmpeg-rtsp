@@ -1,0 +1,16 @@
+[Unit]
+Description=Camara
+Documentation=
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+
+[Service]
+Restart=always
+User=www-data
+Group=www-data
+ExecStart=/bin/sh /path/to/nextcloud/camera/files/stream.sh %I
+WorkingDirectory=/path/to/nextcloud/camera/files/
+NoNewPrivileges=false
+
+[Install]
+WantedBy=multi-user.target
