@@ -16,6 +16,8 @@ In my case, the MP4 stream files are under Nextcloud storage so I can view them 
 
 [clean.sh](./clean.sh) will clean up the MP4 archive folder older than 31 days. The script will be run by [crontab](./crontab) daily.
 
+In regards to permission, all scripts, crontab and files are owned by `www-data` user. They can be directly accessed by Nextcloud.
+
 ## License
 
 MIT License.
